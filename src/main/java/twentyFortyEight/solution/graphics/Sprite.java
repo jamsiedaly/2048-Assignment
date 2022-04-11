@@ -1,4 +1,4 @@
-package com.codenomads.main2048.graphics;
+package twentyFortyEight.solution.graphics;
 
 public class Sprite {
 

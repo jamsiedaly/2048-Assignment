@@ -1,6 +1,6 @@
-package com.codenomads.main2048.graphics;
+package twentyFortyEight.solution.graphics;
 
-import com.codenomads.main2048.Application;
+import twentyFortyEight.solution.Application;
 
 public class Renderer {
 	

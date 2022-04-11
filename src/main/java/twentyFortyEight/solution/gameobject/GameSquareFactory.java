@@ -1,4 +1,4 @@
-package com.codenomads.main2048.gameobject;
+package twentyFortyEight.solution.gameobject;
 
 import java.util.Map;
 

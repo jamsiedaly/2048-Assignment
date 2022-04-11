@@ -1,8 +1,9 @@
-package com.codenomads.main2048.game;
+package twentyFortyEight.solution.game;
 
-import com.codenomads.main2048.Application;
-import com.codenomads.main2048.gameobject.GameSquare;
-import com.codenomads.main2048.gameobject.GameSquareFactory;
+import twentyFortyEight.solution.Application;
+import twentyFortyEight.solution.gameobject.GameSquare;
+import twentyFortyEight.solution.gameobject.GameSquareFactory;
+import twentyFortyEight.solution.input.Keyboard;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -12,8 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.codenomads.main2048.graphics.Renderer;
-import com.codenomads.main2048.input.Keyboard;
+import twentyFortyEight.solution.graphics.Renderer;
 
 public class Game {
 

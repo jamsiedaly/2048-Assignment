@@ -1,11 +1,10 @@
-package com.codenomads.main2048.gameobject;
+package twentyFortyEight.exercise.gameobject;
 
-import com.codenomads.main2048.Application;
 import java.util.Random;
-
-import com.codenomads.main2048.game.Game;
-import com.codenomads.main2048.graphics.Renderer;
-import com.codenomads.main2048.graphics.Sprite;
+import twentyFortyEight.exercise.Application;
+import twentyFortyEight.exercise.game.Game;
+import twentyFortyEight.exercise.graphics.Renderer;
+import twentyFortyEight.exercise.graphics.Sprite;
 
 public class GameSquare {
 
@@ -81,27 +80,14 @@ public class GameSquare {
 	}
 	
 	public void update() {
-		if(Game.moving) {
-			if(!hasMoved) {
-				hasMoved = true;
-			}
-			if(canMove()) {
-				moving = true;
-			}
-			
-			if(moving) {
-				if(Game.dir == 0) x -= speed;
-				if(Game.dir == 1) x += speed;
-				if(Game.dir == 2) y -= speed;
-				if(Game.dir == 3) y += speed;
-			}
-			if(!canMove()) {
-				moving = false;
-				x = Math.round(x / 100) * 100;
-				y = Math.round(y / 100) * 100;
-			}
-		}
-	
+/*
+	You will need to implement the update function which is called on every game square every frame.
+	Things you will need to keep in mind:
+	 * Has the player moved this frame?
+	 * Can this square move?
+	 * Use the game direction to check which direction to move the square in
+
+ */
 	}
 	
 	public void render() {

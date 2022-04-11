@@ -1,4 +1,4 @@
-package com.codenomads.main2048.input;
+package twentyFortyEight.exercise.input;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

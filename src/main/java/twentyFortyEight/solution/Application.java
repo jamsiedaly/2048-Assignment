@@ -1,5 +1,7 @@
-package com.codenomads.main2048;
+package twentyFortyEight.solution;
 
+import twentyFortyEight.solution.game.Game;
+import twentyFortyEight.solution.input.Keyboard;
 import java.awt.Canvas;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
@@ -8,9 +10,6 @@ import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 
 import javax.swing.JFrame;
-
-import com.codenomads.main2048.game.Game;
-import com.codenomads.main2048.input.Keyboard;
 
 public class Application extends Canvas implements Runnable {
 
