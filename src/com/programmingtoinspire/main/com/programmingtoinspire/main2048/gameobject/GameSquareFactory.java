@@ -17,12 +17,12 @@ public class GameSquareFactory {
             GameSquareNumber.ONE_THOUSAND_TWENTY_FOUR, GameSquareNumber.TWO_THOUSAND_FORTY_EIGHT
     );
 
-    public static GameSquare createNextSquare(double x, double y, GameSquareNumber previousNumber) {
+    public GameSquare createNextSquare(double x, double y, GameSquareNumber previousNumber) {
         GameSquareNumber newNumber = nextNumberMap.get(previousNumber);
         return new GameSquare(x, y, newNumber);
     }
 
-    public static GameSquare createNewSquare(double x, double y) {
+    public GameSquare createNewSquare(double x, double y) {
         return new GameSquare(x, y);
     }
 }

@@ -61,7 +61,7 @@ public class Game {
 				if(firstOldSquare.x == secondOldSquare.x && firstOldSquare.y == secondOldSquare.y && !firstOldSquare.remove && !secondOldSquare.remove) {
 					firstOldSquare.remove = true;
 					secondOldSquare.remove = true;
-					objects.add(GameSquareFactory.createNextSquare(firstOldSquare.x, firstOldSquare.y, firstOldSquare.value));
+					objects.add(squareFactory.createNextSquare(firstOldSquare.x, firstOldSquare.y, firstOldSquare.value));
 				}
 			}
 		}
@@ -87,7 +87,7 @@ public class Game {
 			}
 			if(isAvailable) available = true;
 		}
-		objects.add(GameSquareFactory.createNewSquare(x * 100, y * 100));
+		objects.add(squareFactory.createNewSquare(x * 100, y * 100));
 	}
 
 	private void movingLogic() {

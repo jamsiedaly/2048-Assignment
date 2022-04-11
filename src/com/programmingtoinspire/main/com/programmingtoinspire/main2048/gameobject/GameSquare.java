@@ -16,7 +16,8 @@ public class GameSquare {
 	public boolean moving = false, remove = false, hasMoved = false;
 	public final GameSquareNumber value;
 	
-	Random rand = new Random();
+	private Random rand = new Random();
+	private GameSquareFactory squareFactory = new GameSquareFactory();
 
 	protected GameSquare(double x, double y, GameSquareNumber number) {
 		this.x = x;
