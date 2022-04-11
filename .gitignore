@@ -1,4 +1,5 @@
 .idea
+target
 **/.classpath
 **/*.iml
 **/.DS_Store
