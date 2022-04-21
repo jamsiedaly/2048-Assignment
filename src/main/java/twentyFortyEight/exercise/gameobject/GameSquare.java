@@ -37,32 +37,7 @@ public class GameSquare {
 	}
 
 	private Sprite createSprite(GameSquareNumber number) {
-		switch (number) {
-			case TWO:
-				return new Sprite(100, 100, 0xefe5db);
-			case FOUR:
-				return new Sprite(100, 100, 0xece0c8);
-			case EIGHT:
-				return new Sprite(100, 100, 0xf1b078);
-			case SIXTEEN:
-				return new Sprite(100, 100, 0xEB8C52);
-			case THIRTY_TWO:
-				return new Sprite(100, 100, 0xF57C5F);
-			case SIXTY_FOUR:
-				return new Sprite(100, 100, 0xEC563D);
-			case ONE_HUNDRED_TWENTY_EIGHT:
-				return new Sprite(100, 100, 0xF2D86A);
-			case TWO_HUNDRED_FIFTY_SIX:
-				return new Sprite(100, 100, 0xECC750);
-			case FIVE_HUNDRED_TWELVE:
-				return new Sprite(100, 100, 0xE5BF2D);
-			case ONE_THOUSAND_TWENTY_FOUR:
-				return new Sprite(100, 100, 0xE2B913);
-			case TWO_THOUSAND_FORTY_EIGHT:
-				return new Sprite(100, 100, 0xEDC22E);
-			default:
-				throw new RuntimeException();
-		}
+		return new Sprite(0xefe5db);
 	}
 
 	public boolean canMove() {

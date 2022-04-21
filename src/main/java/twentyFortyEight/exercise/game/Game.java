@@ -49,40 +49,40 @@ public class Game {
 	
 
 	private void checkForValueIncrease() {
-		for(int i = 0; i < objects.size(); i++) {
-			for(int j = 0; j < objects.size(); j++) {
-				if(i == j) continue;
-				GameSquare firstOldSquare = objects.get(i);
-				GameSquare secondOldSquare = objects.get(j);
-				if(firstOldSquare.x == secondOldSquare.x && firstOldSquare.y == secondOldSquare.y && !firstOldSquare.remove && !secondOldSquare.remove) {
-					firstOldSquare.remove = true;
-					secondOldSquare.remove = true;
-					objects.add(squareFactory.createNextSquare(firstOldSquare.x, firstOldSquare.y, firstOldSquare.value));
-				}
-			}
-		}
-		for(int i = 0; i < objects.size(); i++) {
-			if(objects.get(i).remove) objects.remove(i);
-		}
+//		for(int i = 0; i < objects.size(); i++) {
+//			for(int j = 0; j < objects.size(); j++) {
+//				if(i == j) continue;
+//				GameSquare firstOldSquare = objects.get(i);
+//				GameSquare secondOldSquare = objects.get(j);
+//				if(firstOldSquare.x == secondOldSquare.x && firstOldSquare.y == secondOldSquare.y && !firstOldSquare.remove && !secondOldSquare.remove) {
+//					firstOldSquare.remove = true;
+//					secondOldSquare.remove = true;
+//					objects.add(squareFactory.createNextSquare(firstOldSquare.x, firstOldSquare.y, firstOldSquare.value));
+//				}
+//			}
+//		}
+//		for(int i = 0; i < objects.size(); i++) {
+//			if(objects.get(i).remove) objects.remove(i);
+//		}
 	}
 
 	private void spawn() {
-		if(objects.size() == 16) return;
-		
-		boolean available = false;
-		int x = 0, y = 0;
-		while(!available) {
-			x = rand.nextInt(4);
-			y = rand.nextInt(4);
-			boolean isAvailable = true;
-			for(int i = 0 ; i < objects.size(); i++) {
-				if(objects.get(i).x / 100 == x && objects.get(i).y / 100 == y) {
-					isAvailable = false;
-				}
-			}
-			if(isAvailable) available = true;
-		}
-		objects.add(squareFactory.createNewSquare(x * 100, y * 100));
+//		if(objects.size() == 16) return;
+//
+//		boolean available = false;
+//		int x = 0, y = 0;
+//		while(!available) {
+//			x = rand.nextInt(4);
+//			y = rand.nextInt(4);
+//			boolean isAvailable = true;
+//			for(int i = 0 ; i < objects.size(); i++) {
+//				if(objects.get(i).x / 100 == x && objects.get(i).y / 100 == y) {
+//					isAvailable = false;
+//				}
+//			}
+//			if(isAvailable) available = true;
+//		}
+		objects.add(squareFactory.createNewSquare(0, 0));
 	}
 
 	private void movingLogic() {

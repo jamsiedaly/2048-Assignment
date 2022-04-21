@@ -10,7 +10,7 @@ import twentyFortyEight.exercise.input.Keyboard;
 
 public class Application extends Canvas implements Runnable {
 
-	public static final int WIDTH = 400, HEIGHT = 400;
+	public static final int WIDTH = 100, HEIGHT = 100;
 	public static float scale = 2.0f;
 	
 	public JFrame frame;
