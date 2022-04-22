@@ -48,40 +48,16 @@ public class Game {
 	}
 	
 
+// You going to iterate over all our tiles.
+// If two tiles are occupying the same square and are the same value, they can be merged.
+// Remember that the product of all new tiles must be the sum of the two previous tiles.
+// The old tiles must be removed from the list of objects after merging
 	private void checkForValueIncrease() {
-//		for(int i = 0; i < objects.size(); i++) {
-//			for(int j = 0; j < objects.size(); j++) {
-//				if(i == j) continue;
-//				GameSquare firstOldSquare = objects.get(i);
-//				GameSquare secondOldSquare = objects.get(j);
-//				if(firstOldSquare.x == secondOldSquare.x && firstOldSquare.y == secondOldSquare.y && !firstOldSquare.remove && !secondOldSquare.remove) {
-//					firstOldSquare.remove = true;
-//					secondOldSquare.remove = true;
-//					objects.add(squareFactory.createNextSquare(firstOldSquare.x, firstOldSquare.y, firstOldSquare.value));
-//				}
-//			}
-//		}
-//		for(int i = 0; i < objects.size(); i++) {
-//			if(objects.get(i).remove) objects.remove(i);
-//		}
 	}
 
+//	Tiles must be spawnd on a random square
+//	The square must be empty
 	private void spawn() {
-//		if(objects.size() == 16) return;
-//
-//		boolean available = false;
-//		int x = 0, y = 0;
-//		while(!available) {
-//			x = rand.nextInt(4);
-//			y = rand.nextInt(4);
-//			boolean isAvailable = true;
-//			for(int i = 0 ; i < objects.size(); i++) {
-//				if(objects.get(i).x / 100 == x && objects.get(i).y / 100 == y) {
-//					isAvailable = false;
-//				}
-//			}
-//			if(isAvailable) available = true;
-//		}
 		objects.add(squareFactory.createNewSquare(0, 0));
 	}
 
@@ -99,7 +75,6 @@ public class Game {
 			}
 		}
 		if(!moving && hasMoved) {
-			spawn();
 			hasMoved = false;
 		}
 		if(!moving && !hasMoved) {
