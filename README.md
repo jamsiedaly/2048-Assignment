@@ -68,4 +68,24 @@ you should call spawn().
 
 ![Two tiles](images/two_tiles.png)
 
-### 
+You'll sometimes notice 2 tiles spawn on top of each other. Add some logic to the spawn function to make sure no two
+tiles are spawned on the same square.
+
+### Factory Methods
+
+If you go the GameSquareFactory, you'll find two methods there which return a new instance of a GameSquare. These are 
+called factory methods. You will need to implement the createNextSquareMethod. This method should take the value of a tile
+and return a new tile with the next value in the sequence. 
+
+```
+2 -> 4 -> 8 -> 16 -> 32 -> 64 -> 128 -> 256 -> 512 -> 1024 -> 2048
+```
+
+You will notice that your tiles do not increase in value when they are slid into each other. You will need to implement 
+this in the checkForValueIncrease method. You can use the newly implemented factory method to create the new tile when 
+two matching tiles merge.
+
+### Congratulations
+
+Great news, if you've been able to follow along you should have a working game of 2048! I recommend playing a few games
+and try to find some bugs in it.
