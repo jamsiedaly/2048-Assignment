@@ -89,3 +89,5 @@ two matching tiles merge.
 
 Great news, if you've been able to follow along you should have a working game of 2048! I recommend playing a few games
 and try to find some bugs in it.
+
+This code is far from perfect, maye have a look around and try to find some room for improvement
